@@ -1,0 +1,184 @@
+.myweb__header{
+    display: flex;
+    flex-direction: row;
+}
+
+.myweb__header-content{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    margin-right: 5rem;
+}
+
+.myweb__header-content span{
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 62px;
+    line-height: 75px;
+    letter-spacing: -0.04em;
+    
+ }
+
+.myweb__header-content h1{
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 62px;
+    line-height: 75px;
+    letter-spacing: -0.04em;
+
+}
+
+
+
+.myweb__header-content p{
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
+    color: var(--color-text);
+
+    margin-top: 1.5rem;
+}
+
+.myweb__header-content__input{
+    width: 100%;
+    margin: 2rem 0 1rem;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.myweb__header-content__input input{
+    flex: 2;
+    width: 100%;
+    min-height: 50px;
+    font-family: var(--font-family);
+    font-size: 20px;
+    background: #052d56;
+    line-height: 27px;
+    color: var(--color-text);
+    border: 2px solid var(--color-footer);
+    padding: 0 1rem;
+    outline: none;
+    color: #ffff;
+
+
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.myweb__header-content__input button{
+    flex: 0.6;
+    width: 100%;
+    min-height: 50px;
+    
+    background: #ff4820;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    color: #ffff;
+    cursor: pointer;
+    outline: none;
+    padding: 0 1rem;
+    border: none;
+
+}
+
+.myweb__header-content__people{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.myweb__header-content__people img{
+    width: 181.79px;
+    height: 38px;
+}
+
+.myweb__header-content__people p{
+    margin: 0 0 0 1rem;
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 38px;
+    color: #ffff;
+    text-align: center;
+}
+
+.myweb__header-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.myweb__header-image img{
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 1050px) {
+    .myweb__header{
+        flex-direction: column;
+    }
+
+    .myweb__header-content{
+        margin:  0 0 3rem;
+    }
+    
+}
+
+@media screen and (max-width: 650px) {
+    .myweb__header h1{
+        font-size: 48px;
+        line-height: 60px;
+    }
+
+    .myweb__header p{
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .myweb__header-content__people{
+        flex-direction: column;
+    }
+
+    .myweb__header-content__people p{
+        margin: 0;
+    }
+    
+    .myweb__header-content__input input,
+    .myweb__header-content__input button{
+        font-size: 16px;
+        line-height: 26px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .myweb__header h1{
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+    .myweb__header p{
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .myweb__header-content__input input,
+    .myweb__header-content__input button{
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
